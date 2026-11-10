@@ -1212,10 +1212,15 @@ p {
   grid-column: 4 / 7;
 }
 .mosaic__item--3 {
-  grid-column: 1 / 3;
+  grid-column: 1 / 4;
+  grid-row: span 2;
 }
 .mosaic__item--4 {
-  grid-column: 3 / 7;
+  grid-column: 4 / 7;
+  grid-row: span 2;
+}
+.mosaic__item--4 img {
+  object-position: 50% 50%;
 }
 .credit-line {
   margin-top: 1rem;
@@ -1296,12 +1301,13 @@ p {
     grid-row: span 2;
   }
   .mosaic__item--1,
-  .mosaic__item--2,
-  .mosaic__item--3 {
+  .mosaic__item--2 {
     grid-column: auto;
   }
+  .mosaic__item--3,
   .mosaic__item--4 {
     grid-column: 1 / -1;
+    grid-row: span 2;
   }
   .stats {
     grid-template-columns: 1fr 1fr;
