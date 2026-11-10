@@ -40,6 +40,8 @@ pnpm preview   # serve dist/
 
 In an Amp orb, `amp orb services ensure` starts the dev server from `.amp/services.yaml` and prints its portal URL.
 
+Cloudflare Workers Builds deploys `main`: it runs `pnpm run build`, then `npx wrangler deploy`, which uploads `dist/` as static assets as configured in `wrangler.jsonc`.
+
 The images in `public/images/` are committed. `pnpm images` (`scripts/fetch-images.sh`, which needs `curl` and ImageMagick) regenerates them from her Squarespace CDN.
 
 ## Where things live
