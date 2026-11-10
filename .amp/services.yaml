@@ -1,0 +1,8 @@
+services:
+  web:
+    command: pnpm dev --port "$PORT" --strictPort
+    port: 5173
+    portal:
+      url: /
+      title: Celia Hottenstein site
+      description: Vite dev server for the site makeover.
